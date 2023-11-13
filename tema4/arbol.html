@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="500" height="600" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var recorre=50;
+posicionInicialx=230;
+posicionInicialy=50;
+posicionInicialLetrax=posicionInicialx-20;
+posicionInicialLetray=posicionInicialy-10;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("19", posicionInicialLetrax, posicionInicialLetray+20);
+ctx.beginPath();
+ctx.arc(posicionInicialx,posicionInicialy,40,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(posicionInicialx, 90);
+ctx.lineTo(posicionInicialx+50, 110);
+ctx.stroke();
+
+ctx.font = "30px Arial";
+ctx.strokeText("15", posicionInicialLetrax-50, posicionInicialLetray+120);
+ctx.beginPath();
+ctx.arc(posicionInicialx-50,posicionInicialy+100,40,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(posicionInicialx, 90);
+ctx.lineTo(posicionInicialx-50, 110);
+ctx.stroke();
+
+ctx.font = "30px Arial";
+ctx.strokeText("23", posicionInicialLetrax+50, posicionInicialLetray+120);
+ctx.beginPath();
+ctx.arc(posicionInicialx+50,posicionInicialy+100,40,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(posicionInicialx, 90);
+ctx.lineTo(posicionInicialx+50, 110);
+ctx.stroke();
+
+ctx.font = "30px Arial";
+ctx.strokeText("11", posicionInicialLetrax-100, posicionInicialLetray+220);
+ctx.beginPath();
+ctx.arc(posicionInicialx-100,posicionInicialy+200,40,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(posicionInicialx-110, 211);
+ctx.lineTo(posicionInicialx-50, 190);
+ctx.stroke();
+
+ctx.font = "30px Arial";
+ctx.strokeText("13", posicionInicialLetrax+9, posicionInicialLetray+320);
+ctx.beginPath();
+ctx.arc(posicionInicialx+5,posicionInicialy+300,40,0,2*Math.PI);
+ctx.stroke();
+ctx.moveTo(posicionInicialx+5, 310);
+ctx.lineTo(posicionInicialx-105, 290);
+ctx.stroke();
+
+
+</script> 
+
+</body>
+</html>
